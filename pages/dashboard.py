@@ -3,6 +3,10 @@ import pandas as pd
 import os
 import plotly.express as px
 
+DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+os.makedirs(DATA_DIR, exist_ok=True)
+
+
 # --- Page Config ---
 st.set_page_config(page_title="SheEconomy Dashboard", layout="wide")
 
